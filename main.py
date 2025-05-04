@@ -58,7 +58,7 @@ def main():
              for shot in shots:
                 if asteroid.collides_with(shot):
                     shot.kill()
-                    asteroid.kill()
+                    asteroid.split()
         screen.fill("black")    
         #player.update(dt)
         
